@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New password</title>
+    <title>Email sent</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
@@ -58,31 +58,22 @@
             margin: 0 auto 32px;
             text-align: center;
         }
-        .form {
+        .email-icon {
             display: flex;
-                flex-direction: column;
-                justify-content: center;
-                
-        }
-        .field {
-            display: flex;
-                flex-direction: column;
-            width: 100%;
-            padding: 12px;
-        }
-        .field__label {
-            font-size: var(--sm);
-            font-weight: bold;
-            margin-bottom: 4px;
-        }
-        .field__input {
+                place-content: center center;
+            justify-self: center;
+            width: 132px;
+            height: 132px;
+            margin-bottom: 24px;
+            border-radius: 50%;
             background-color: var(--text-input-field);
-            border: none;
-            border-radius: 8px;
-            height: 30px;
-            font-size: var(--md);
-            padding: 6px;
+            
+            
         }
+        .email-icon img {
+            width: 80px;
+        }
+              
         .button {
             width: 95%;
             height: 50px;
@@ -97,6 +88,18 @@
             color: var(--white);
             background-color: var(--hospital-green);
         }
+
+        .tinny-note {
+            font-size: var(--sm);
+            color: var(--very-light-pink);
+            justify-self: center;
+        }
+
+        .tinny-note__link {
+            color: var(--hospital-green);
+            text-decoration: none;
+        }
+
         @media (max-width: 640px) {
             .logo {
                 display: block;
@@ -109,20 +112,16 @@
         <div class="form-container">
             
             <img src="./assets/logos/logo_yard_sale.svg" alt="logo" class="logo">
-            <h1 class="title">Create a new password</h1>
-            <p class="subtitle">Enter a new password for your account</p>
-            <form action="/" class="form">
-                <div class="field">
-                    <label for="password" class="field__label">Password</label>
-                    <input type="password" id="password" placeholder="*********" class="field__input input--password">
-                </div>
-                <div class="field">
-                    <label for="new-password" class="field__label">Re-enter password</label>
-                    <input type="password" id="new-password" placeholder="*********" class="field__input input--password">
-                </div>
-                
-                <input type="submit" value="Confirm" class="button button--primary">
-            </form>
+            <h1 class="title">Email has been sent!</h1>
+            <p class="subtitle">Please check your inbox for instructions on how to reset the password</p>
+            <div class="email-icon">
+                <img src="./assets/icons/email.svg" alt="Email">
+            </div>
+            <button class="button button--primary">Login</button>
+            <p class="tinny-note">
+                <span>Didn't received the email?</span>
+                <a class="tinny-note__link" href="/">Resend</a>
+            </p>
         </div>
     </div>
 </body>
