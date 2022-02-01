@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Order</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/logos/favicon_bota_fora.svg" type="img">
+    <style>
+    :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+            --cardsize-web:240px;
+            --cardsize-mobile: 140px;
+            --cardsize-gap: 26px; 
+        }
+        * {
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Quicksand', sans-serif;
+            min-height: 400px;
+        }
+        .my-order {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+                place-items: center;
+        }
+        .my-order-container {
+            display: grid;
+                grid-template-rows: auto 1fr auto;
+            width: 300px;
+        }
+        .order-title {
+            font-size: var(--lg);
+            margin-bottom: 40px;
+        }
+        .order-summary {
+            display: grid;
+                grid-template-columns: auto 1fr;
+                gap:16px;
+                align-items: center;
+            padding: 24px;
+            margin-bottom: 24px;
+            border-radius: 8px;
+            background-color: var(--text-input-field);
+            
+        }
+        .order-summary__info {
+            display: flex;
+                flex-direction: column;
+            text-align: center;
+        }
+        .order-summary__date {
+            
+            font-size: var(--md);
+            font-weight: bold;
+        }
+        .order-summary__count {
+            
+            font-size: var(--sm);
+            color: var(--very-light-pink);
+        }
+        .order-summary__totalmoney {
+            font-weight: bold;
+            text-align: end;
+
+        }
+        .order-products {
+            display: flex;
+                flex-direction: column;
+        }
+        .product-card {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .product-card__img {
+            width: 70px;
+            height: 70px;
+            border-radius: 20px;
+            object-position: center;
+            object-fit: cover;
+        }
+        .product_card__name {
+            color: var(--very-light-pink)
+        }
+        .product-card__price {
+            color: var(--black);
+            font-size: var(--md);
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="my-order">
+        <div class="my-order-container">
+            <h1 class="order-title">My order</h1>
+            <div class="order-summary">
+                <p class="order-summary__info">
+                    <span class="order-summary__date">31.Jan.2022</span>
+                    <span class="order-summary__count">6 articles</span>
+                </p>
+                <p class="order-summary__totalmoney">$560.00</p>
+            </div>
+            <div class="order-products">
+                <div class="product-card">
+                    <figure class="product-card__img">
+                        <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
+                    
+                    </figure>
+                    <p class="product_card__name">Kindle Paperwhite 10ma Gen</p>
+                    <p class="product-card__price">$129,00</p>
+                </div>
+                <div class="product-card">
+                    <figure class="product-card__img">
+                        <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
+                    
+                    </figure>
+                    <p class="product_card__name">Kindle Paperwhite 10ma Gen</p>
+                    <p class="product-card__price">$129,00</p>
+                </div>
+                <div class="product-card">
+                    <figure class="product-card__img">
+                        <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
+                    
+                    </figure>
+                    <p class="product_card__name">Kindle Paperwhite 10ma Gen</p>
+                    <p class="product-card__price">$129,00</p>
+                </div>
+                <div class="product-card">
+                    <figure class="product-card__img">
+                        <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
+                    
+                    </figure>
+                    <p class="product_card__name">Kindle Paperwhite 10ma Gen</p>
+                    <p class="product-card__price">$129,00</p>
+                </div>
+                <div class="product-card">
+                    <figure class="product-card__img">
+                        <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
+                    
+                    </figure>
+                    <p class="product_card__name">Kindle Paperwhite 10ma Gen</p>
+                    <p class="product-card__price">$129,00</p>
+                </div>
+                <div class="product-card">
+                    <figure class="product-card__img">
+                        <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
+                    
+                    </figure>
+                    <p class="product_card__name">Kindle Paperwhite 10ma Gen</p>
+                    <p class="product-card__price">$129,00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
