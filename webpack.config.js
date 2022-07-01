@@ -11,6 +11,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
         clean: true,
+        publicPath: '/',
     },
     mode: 'development',
     resolve: {
@@ -59,5 +60,8 @@ module.exports = {
         new MiniCssPlugin ({
             filename:'[name].css'
         })
-    ]
+    ],
+    devServer: {
+        historyApiFallback: true,
+    }
 }
