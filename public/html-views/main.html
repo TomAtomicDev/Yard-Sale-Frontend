@@ -39,35 +39,35 @@
                 gap: var(--cardsize-gap);
                 place-content: center;
         }
-        .product-card {
+        .product-item {
             width: var(--cardsize-web);
             
         }
-        .product-card__img{
+        .product-item__img{
             width: var(--cardsize-web);
             height: var(--cardsize-web);
             border-radius: 20px;
             object-fit: cover;
         }
-        .product-info{
+        .item-info{
             display: flex;
                 justify-content: space-between;
                 align-items: center;
             margin-top: 16px;
         }
-        .product-text__price {
+        .item-text__price {
             font-weight: bold;
             font-size: var(--md);
             margin-bottom: 4px;
 
         }
-        .product-text__name {
+        .item-text__name {
             font-weight: normal;
             font-size: var(--sm);
 
 
         }
-        .product-info__icon img{
+        .item-info__icon img{
             width: 35px;
             height: 35px;
         }
@@ -76,242 +76,230 @@
                 display: grid;
                 grid-template-columns: repeat(auto-fill, var(--cardsize-mobile)); 
             }
-            .product-card {
+            .product-item {
                 width: var(--cardsize-mobile);  
             }
-            .product-card__img{
+            .product-item__img{
             width: var(--cardsize-mobile);
             height: var(--cardsize-mobile);
             }
-            .product-info__icon img{
+            .item-info__icon img{
             width: 30px;
             height: 30px;
         }
         }
-    </style>
+    </style> 
 </head>
 <body>
     <section class="main-container">
         <div class="cards-container">
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
-                
-                <div class="product-info">
-                    <div class="product-text">
-                        <p class="product-text__price">$129,00</p>
-                        <p class="product-text__name">Kindle Paperwhite 10th Gen</p>
-                    </div>
-                    <figure class="product-info__icon">
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-                </div>
-                
+            <div class="product-item">               
             </div>
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/3394663/pexels-photo-3394663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
+            <div class="product-item">
+                <img src="https://images.pexels.com/photos/3394663/pexels-photo-3394663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-item__img">
 
-                <div class="product-info">
-                    <div class="product-text">
-                        <p class="product-text__price">$49,00</p>
-                        <p class="product-text__name">Headphones</p>
+                <div class="item-info">
+                    <div class="item-text">
+                        <p class="item-text__price">$49,00</p>
+                        <p class="item-text__name">Headphones</p>
                     </div>
-                    <figure class="product-info__icon">
+                    <figure class="item-info__icon">
                         <img src="./assets/icons/bt_add_to_cart.svg" alt="">
                     </figure>
                 </div>
 
             </div>
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
+            <div class="product-item">
+                <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-item__img">
                 
-                <div class="product-info">
-                    <div class="product-text">
-                        <p class="product-text__price">$129,00</p>
-                        <p class="product-text__name">Kindle Paperwhite 10th Gen</p>
+                <div class="item-info">
+                    <div class="item-text">
+                        <p class="item-text__price">$129,00</p>
+                        <p class="item-text__name">Kindle Paperwhite 10th Gen</p>
                     </div>
-                    <figure class="product-info__icon">
+                    <figure class="item-info__icon">
                         <img src="./assets/icons/bt_add_to_cart.svg" alt="">
                     </figure>
                 </div>
                 
             </div>
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/3394663/pexels-photo-3394663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
+            <div class="product-item">
+                <img src="https://images.pexels.com/photos/3394663/pexels-photo-3394663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-item__img">
                 
-                <div class="product-info">
-                    <div class="product-text">
-                        <p class="product-text__price">$49,00</p>
-                        <p class="product-text__name">Headphones</p>
+                <div class="item-info">
+                    <div class="item-text">
+                        <p class="item-text__price">$49,00</p>
+                        <p class="item-text__name">Headphones</p>
                     </div>
-                    <figure class="product-info__icon">
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-                </div>
-
-            </div>
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
-                
-                <div class="product-info">
-                    <div class="product-text">
-                        <p class="product-text__price">$129,00</p>
-                        <p class="product-text__name">Kindle Paperwhite 10th Gen</p>
-                    </div>
-                    <figure class="product-info__icon">
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-                </div>
-                
-            </div>
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/3394663/pexels-photo-3394663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
-                
-                <div class="product-info">
-                    <div class="product-text">
-                        <p class="product-text__price">$49,00</p>
-                        <p class="product-text__name">Headphones</p>
-                    </div>
-                    <figure class="product-info__icon">
+                    <figure class="item-info__icon">
                         <img src="./assets/icons/bt_add_to_cart.svg" alt="">
                     </figure>
                 </div>
 
             </div>
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
+            <div class="product-item">
+                <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-item__img">
                 
-                <div class="product-info">
-                    <div class="product-text">
-                        <p class="product-text__price">$129,00</p>
-                        <p class="product-text__name">Kindle Paperwhite 10th Gen</p>
+                <div class="item-info">
+                    <div class="item-text">
+                        <p class="item-text__price">$129,00</p>
+                        <p class="item-text__name">Kindle Paperwhite 10th Gen</p>
                     </div>
-                    <figure class="product-info__icon">
+                    <figure class="item-info__icon">
                         <img src="./assets/icons/bt_add_to_cart.svg" alt="">
                     </figure>
                 </div>
                 
             </div>
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/3394663/pexels-photo-3394663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
+            <div class="product-item">
+                <img src="https://images.pexels.com/photos/3394663/pexels-photo-3394663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-item__img">
                 
-                <div class="product-info">
-                    <div class="product-text">
-                        <p class="product-text__price">$49,00</p>
-                        <p class="product-text__name">Headphones</p>
+                <div class="item-info">
+                    <div class="item-text">
+                        <p class="item-text__price">$49,00</p>
+                        <p class="item-text__name">Headphones</p>
                     </div>
-                    <figure class="product-info__icon">
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-                </div>
-
-            </div>
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
-                
-                <div class="product-info">
-                    <div class="product-text">
-                        <p class="product-text__price">$129,00</p>
-                        <p class="product-text__name">Kindle Paperwhite 10th Gen</p>
-                    </div>
-                    <figure class="product-info__icon">
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-                </div>
-                
-            </div>
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/3394663/pexels-photo-3394663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
-                
-                <div class="product-info">
-                    <div class="product-text">
-                        <p class="product-text__price">$49,00</p>
-                        <p class="product-text__name">Headphones</p>
-                    </div>
-                    <figure class="product-info__icon">
+                    <figure class="item-info__icon">
                         <img src="./assets/icons/bt_add_to_cart.svg" alt="">
                     </figure>
                 </div>
 
             </div>
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
+            <div class="product-item">
+                <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-item__img">
                 
-                <div class="product-info">
-                    <div class="product-text">
-                        <p class="product-text__price">$129,00</p>
-                        <p class="product-text__name">Kindle Paperwhite 10th Gen</p>
+                <div class="item-info">
+                    <div class="item-text">
+                        <p class="item-text__price">$129,00</p>
+                        <p class="item-text__name">Kindle Paperwhite 10th Gen</p>
                     </div>
-                    <figure class="product-info__icon">
+                    <figure class="item-info__icon">
                         <img src="./assets/icons/bt_add_to_cart.svg" alt="">
                     </figure>
                 </div>
                 
             </div>
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/3394663/pexels-photo-3394663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
+            <div class="product-item">
+                <img src="https://images.pexels.com/photos/3394663/pexels-photo-3394663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-item__img">
                 
-                <div class="product-info">
-                    <div class="product-text">
-                        <p class="product-text__price">$49,00</p>
-                        <p class="product-text__name">Headphones</p>
+                <div class="item-info">
+                    <div class="item-text">
+                        <p class="item-text__price">$49,00</p>
+                        <p class="item-text__name">Headphones</p>
                     </div>
-                    <figure class="product-info__icon">
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-                </div>
-
-            </div>
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
-                
-                <div class="product-info">
-                    <div class="product-text">
-                        <p class="product-text__price">$129,00</p>
-                        <p class="product-text__name">Kindle Paperwhite 10th Gen</p>
-                    </div>
-                    <figure class="product-info__icon">
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-                </div>
-                
-            </div>
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/3394663/pexels-photo-3394663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
-                
-                <div class="product-info">
-                    <div class="product-text">
-                        <p class="product-text__price">$49,00</p>
-                        <p class="product-text__name">Headphones</p>
-                    </div>
-                    <figure class="product-info__icon">
+                    <figure class="item-info__icon">
                         <img src="./assets/icons/bt_add_to_cart.svg" alt="">
                     </figure>
                 </div>
 
             </div>
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
+            <div class="product-item">
+                <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-item__img">
                 
-                <div class="product-info">
-                    <div class="product-text">
-                        <p class="product-text__price">$129,00</p>
-                        <p class="product-text__name">Kindle Paperwhite 10th Gen</p>
+                <div class="item-info">
+                    <div class="item-text">
+                        <p class="item-text__price">$129,00</p>
+                        <p class="item-text__name">Kindle Paperwhite 10th Gen</p>
                     </div>
-                    <figure class="product-info__icon">
+                    <figure class="item-info__icon">
                         <img src="./assets/icons/bt_add_to_cart.svg" alt="">
                     </figure>
                 </div>
                 
             </div>
-            <div class="product-card">
-                <img src="https://images.pexels.com/photos/3394663/pexels-photo-3394663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
+            <div class="product-item">
+                <img src="https://images.pexels.com/photos/3394663/pexels-photo-3394663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-item__img">
                 
-                <div class="product-info">
-                    <div class="product-text">
-                        <p class="product-text__price">$49,00</p>
-                        <p class="product-text__name">Headphones</p>
+                <div class="item-info">
+                    <div class="item-text">
+                        <p class="item-text__price">$49,00</p>
+                        <p class="item-text__name">Headphones</p>
                     </div>
-                    <figure class="product-info__icon">
+                    <figure class="item-info__icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+
+            </div>
+            <div class="product-item">
+                <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-item__img">
+                
+                <div class="item-info">
+                    <div class="item-text">
+                        <p class="item-text__price">$129,00</p>
+                        <p class="item-text__name">Kindle Paperwhite 10th Gen</p>
+                    </div>
+                    <figure class="item-info__icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+                
+            </div>
+            <div class="product-item">
+                <img src="https://images.pexels.com/photos/3394663/pexels-photo-3394663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-item__img">
+                
+                <div class="item-info">
+                    <div class="item-text">
+                        <p class="item-text__price">$49,00</p>
+                        <p class="item-text__name">Headphones</p>
+                    </div>
+                    <figure class="item-info__icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+
+            </div>
+            <div class="product-item">
+                <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-item__img">
+                
+                <div class="item-info">
+                    <div class="item-text">
+                        <p class="item-text__price">$129,00</p>
+                        <p class="item-text__name">Kindle Paperwhite 10th Gen</p>
+                    </div>
+                    <figure class="item-info__icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+                
+            </div>
+            <div class="product-item">
+                <img src="https://images.pexels.com/photos/3394663/pexels-photo-3394663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-item__img">
+                
+                <div class="item-info">
+                    <div class="item-text">
+                        <p class="item-text__price">$49,00</p>
+                        <p class="item-text__name">Headphones</p>
+                    </div>
+                    <figure class="item-info__icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+
+            </div>
+            <div class="product-item">
+                <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-item__img">
+                
+                <div class="item-info">
+                    <div class="item-text">
+                        <p class="item-text__price">$129,00</p>
+                        <p class="item-text__name">Kindle Paperwhite 10th Gen</p>
+                    </div>
+                    <figure class="item-info__icon">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+                
+            </div>
+            <div class="product-item">
+                <img src="https://images.pexels.com/photos/3394663/pexels-photo-3394663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-item__img">
+                
+                <div class="item-info">
+                    <div class="item-text">
+                        <p class="item-text__price">$49,00</p>
+                        <p class="item-text__name">Headphones</p>
+                    </div>
+                    <figure class="item-info__icon">
                         <img src="./assets/icons/bt_add_to_cart.svg" alt="">
                     </figure>
                 </div>

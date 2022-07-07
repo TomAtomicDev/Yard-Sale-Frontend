@@ -41,10 +41,7 @@
             display: grid;
                 grid-template-rows: auto 1fr auto;
         }
-        .shopping-cart-container {
 
-            width: 100%;
-        }
         .icon-container {
             position: relative;
             opacity: 85%;
@@ -61,7 +58,7 @@
             cursor: pointer;
             z-index: 2;
         }
-        .order-title {
+        .shoppingCart-title {
             font-size: var(--lg);
             margin-bottom: 40px;
             margin-left: 40px;
@@ -97,28 +94,28 @@
             text-align: end;
 
         }
-        .order-products {
+        .shoppingCart__products {
             display: flex;
                 flex-direction: column;
         }
-        .product-card {
+        .shoppingCart-Item {
             display: grid;
             grid-template-columns: auto 1fr auto auto;
             align-items: center;
             gap: 16px;
             margin-bottom: 24px;
         }
-        .product-card__img {
+        .shoppingCart-Item__img {
             width: 70px;
             height: 70px;
             border-radius: 20px;
             object-position: center;
             object-fit: cover;
         }
-        .product_card__name {
+        .shoppingCart-Item__name {
             color: var(--very-light-pink)
         }
-        .product-card__price {
+        .shoppingCart-Item__price {
             color: var(--black);
             font-size: var(--md);
             font-weight: bold;
@@ -151,62 +148,62 @@
             <div class="icon-container">
                 <img class= "icon-container--close" src="./assets/icons/flechita.svg" alt="close">
             </div>
-            <p class="order-title">Shopping cart</p>
+            <p class="shoppingCart-title">Shopping cart</p>
             
-            <div class="order-products">
-                <div class="product-card">
-                    <figure class="product-card__img">
-                        <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
+            <div class="shoppingCart__products">
+                <div class="shoppingCart-Item">
+                    <figure class="shoppingCart-Item__img">
+                        <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="shoppingCart-Item__img">
                     
                     </figure>
-                    <p class="product_card__name">Kindle Paperwhite 10ma Gen</p>
-                    <p class="product-card__price">$129,00</p>
+                    <p class="shoppingCart-Item__name">Kindle Paperwhite 10ma Gen</p>
+                    <p class="shoppingCart-Item__price">$129,00</p>
                     <img src="./assets/icons/icon_close.png" alt="delete">
                 </div>
-                <div class="product-card">
-                    <figure class="product-card__img">
-                        <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
+                <div class="shoppingCart-Item">
+                    <figure class="shoppingCart-Item__img">
+                        <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="shoppingCart-Item__img">
                     
                     </figure>
-                    <p class="product_card__name">Kindle Paperwhite 10ma Gen</p>
-                    <p class="product-card__price">$129,00</p>
+                    <p class="shoppingCart-Item__name">Kindle Paperwhite 10ma Gen</p>
+                    <p class="shoppingCart-Item__price">$129,00</p>
                     <img src="./assets/icons/icon_close.png" alt="delete">
 
                 </div>
-                <div class="product-card">
-                    <figure class="product-card__img">
-                        <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
+                <div class="shoppingCart-Item">
+                    <figure class="shoppingCart-Item__img">
+                        <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="shoppingCart-Item__img">
                     
                     </figure>
-                    <p class="product_card__name">Kindle Paperwhite 10ma Gen</p>
-                    <p class="product-card__price">$129,00</p>
+                    <p class="shoppingCart-Item__name">Kindle Paperwhite 10ma Gen</p>
+                    <p class="shoppingCart-Item__price">$129,00</p>
                     <img src="./assets/icons/icon_close.png" alt="delete">
                 </div>
-                <div class="product-card">
-                    <figure class="product-card__img">
-                        <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
+                <div class="shoppingCart-Item">
+                    <figure class="shoppingCart-Item__img">
+                        <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="shoppingCart-Item__img">
                     
                     </figure>
-                    <p class="product_card__name">Kindle Paperwhite 10ma Gen</p>
-                    <p class="product-card__price">$129,00</p>
+                    <p class="shoppingCart-Item__name">Kindle Paperwhite 10ma Gen</p>
+                    <p class="shoppingCart-Item__price">$129,00</p>
                     <img src="./assets/icons/icon_close.png" alt="delete">
                 </div>
-                <div class="product-card">
-                    <figure class="product-card__img">
-                        <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
+                <div class="shoppingCart-Item">
+                    <figure class="shoppingCart-Item__img">
+                        <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="shoppingCart-Item__img">
                     
                     </figure>
-                    <p class="product_card__name">Kindle Paperwhite 10ma Gen</p>
-                    <p class="product-card__price">$129,00</p>
+                    <p class="shoppingCart-Item__name">Kindle Paperwhite 10ma Gen</p>
+                    <p class="shoppingCart-Item__price">$129,00</p>
                     <img src="./assets/icons/icon_close.png" alt="delete">
                 </div>
-                <div class="product-card">
-                    <figure class="product-card__img">
-                        <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="product-card__img">
+                <div class="shoppingCart-Item">
+                    <figure class="shoppingCart-Item__img">
+                        <img src="https://images.pexels.com/photos/844734/pexels-photo-844734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="shoppingCart-Item__img">
                     
                     </figure>
-                    <p class="product_card__name">Kindle Paperwhite 10ma Gen</p>
-                    <p class="product-card__price">$129,00</p>
+                    <p class="shoppingCart-Item__name">Kindle Paperwhite 10ma Gen</p>
+                    <p class="shoppingCart-Item__price">$129,00</p>
                     <img src="./assets/icons/icon_close.png" alt="delete">
                 </div>
             </div>
