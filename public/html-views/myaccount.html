@@ -15,7 +15,7 @@
             --black: #000000;
             --dark: #232830;
             --very-light-pink: #C7C7C7;
-            --text-input-field: #F7F7F7;
+            --text-input-form-field: #F7F7F7;
             --hospital-green: #ACD9B2;
             --sm: 14px;
             --md: 16px;
@@ -30,14 +30,14 @@
             font-family: 'Quicksand', sans-serif;
             min-height: 400px;
         }
-        .login {
+        .MyAccount {
             width: 100%;
             height: 100vh;
             
             display: grid;
             place-items: center;
         }
-        .form-container {
+        .MyAccount-container {
             display: grid;
                 grid-template-rows: auto 1fr auto;
             width: 300px;
@@ -71,26 +71,26 @@
                 justify-content: center;
                 
         }
-        .field {
+        .form-field {
             display: flex;
                 flex-direction: column;
             width: 100%;
             padding: 12px;
         }
-        .field__label {
+        .form-field__label {
             font-size: var(--sm);
             font-weight: bold;
             margin-bottom: 4px;
         }
-        .field__input {
-            background-color: var(--text-input-field);
+        .form-field__input {
+            background-color: var(--text-input-form-field);
             border: none;
             border-radius: 8px;
             height: 30px;
             font-size: var(--md);
             padding: 6px;
         }
-        .field__value {
+        .form-field__value {
             color: var(--very-light-pink);
             font-size: var(--md);
             margin: 8px p 32px;
@@ -116,7 +116,7 @@
         
         }
         @media (max-width: 640px) {
-            .form-container {
+            .MyAccount-container {
                 display: inline-block;
                 height: 100%;
                 min-height: 400px;
@@ -133,32 +133,32 @@
     </style>
 </head>
 <body>
-    <div class="login">
-        <div class="form-container">
+    <div class="MyAccount">
+        <div class="MyAccount-container">
             
             
             <h1 class="title title--myaccount">My Account</h1>
-            <!-- <p class="subtitle">Enter a new password for your account</p> -->
+            
             <form action="/" class="form">
-                <div class="field">
-                    <label for="name" class="field__label">Name</label>
-                    <!-- <input type="text" id="name" placeholder="Harry Potter" class="field__input input--password"> -->
-                    <p class="field__value">Harry Potter</p>
+                <div class="form-field">
+                    <label for="name" class="form-field__label">Name</label>
+                    
+                    <p class="form-field__value">Harry Potter</p>
                 </div>
-                <div class="field">
-                    <label for="email" class="field__label">Email adress</label>
-                    <!-- <input type="email" id="email" placeholder="myadress@example.com" class="field__input input--email"> -->
-                    <p class="field__value">dudethatsurvived2001@ministry.com</p>
+                <div class="form-field">
+                    <label for="email" class="form-field__label">Email adress</label>
+                    
+                    <p class="form-field__value">survivor2001@ministry.com</p>
                 </div>
-                <div class="field">
-                    <label for="new-password" class="field__label">Re-enter password</label>
-                    <!-- <input type="password" id="new-password" placeholder="*********" class="field__input input--password"> -->
-                    <p class="field__value">*********</p>
+                <div class="form-field">
+                    <label for="new-password" class="form-field__label">Re-enter password</label>
+                    
+                    <p class="form-field__value">*********</p>
                 </div>
                 
                 <input type="submit" value="Edit" class="button button--secondary">
             </form>
         </div>
     </div>
-</body>
+</body> 
 </html>
