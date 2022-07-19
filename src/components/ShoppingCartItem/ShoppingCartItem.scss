@@ -1,0 +1,22 @@
+.shoppingCart-Item {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.shoppingCart-Item__img {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  object-position: center;
+  object-fit: cover;
+}
+.shoppingCart-Item__name {
+  color: var(--very-light-pink)
+}
+.shoppingCart-Item__price {
+  color: var(--black);
+  font-size: var(--md);
+  font-weight: bold;
+}

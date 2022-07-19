@@ -1,0 +1,29 @@
+.product-detail {
+  position: absolute;
+    right: 0;
+  width: 360px;
+}
+.product-detail__icon-container {
+  position: relative;
+  opacity: 85%;
+}
+.product-detail__icon-close {
+  position: absolute;
+      top: 4px;
+      left: 4px;
+      z-index: 2;
+  width: 26px;
+  height: 26px;
+  padding: 7px;
+  border-radius: 50%;
+  
+  background-color: var(--white);
+  cursor: pointer;
+  z-index: 2;
+}
+
+@media (max-width:640px) {
+  .product-detail {
+      width: 100%;
+  }
+}

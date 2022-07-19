@@ -1,0 +1,12 @@
+.cards-container {
+  display: grid;
+      grid-template-columns: repeat(auto-fill, var(--cardsize-web));
+      gap: var(--cardsize-gap);
+      place-content: center;
+}
+
+@media (max-width: 640px) {
+  .cards-container{
+      grid-template-columns: repeat(auto-fill, var(--cardsize-mobile)); 
+  }
+}

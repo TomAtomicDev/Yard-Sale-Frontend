@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New password</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #C7C7C7;
+            --text-input-form-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        * {
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Quicksand', sans-serif;
+            min-height: 400px;
+        }
+        .CreateAccount {
+            width: 100%;
+            height: 100vh;
+            
+            display: grid;
+            place-items: center;
+        }
+        .CreateAccount-container {
+            display: grid;
+                grid-template-rows: auto 1fr auto;
+            width: 300px;
+                 
+        }
+        .logo {
+            width: 150px;
+            margin-bottom: 48px;
+            justify-self: center;
+            display: none;
+        }
+        .title {
+            font-size: var(--lg);
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        .CreateAccount__title {
+            text-align: start;
+            padding: 12px;
+        }
+
+        .form {
+            display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+        }
+        .form-field {
+            display: flex;
+                flex-direction: column;
+            width: 100%;
+            padding: 12px;
+        }
+        .form-field__label {
+            font-size: var(--sm);
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        .form-field__input {
+            background-color: var(--text-input-form-field);
+            border: none;
+            border-radius: 8px;
+            height: 30px;
+            font-size: var(--md);
+            padding: 6px;
+        }
+        .button {
+            width: 95%;
+            height: 50px;
+            margin: 14px auto 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: var(--md);
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .button--primary {
+            color: var(--white);
+            background-color: var(--hospital-green);
+        }
+        @media (max-width: 640px) {
+            .CreateAccount-container {
+                display: inline-block;
+                height: 100%;
+                min-height: 400px;
+
+            }
+            .button--primary {
+                position: absolute;
+                width: 285px;
+                justify-self: center;
+                bottom: 0px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="CreateAccount"> 
+        <div class="CreateAccount-container">
+            
+            
+            <h1 class="title CreateAccount__title">Create a new Account</h1>
+            
+            <form action="/" class="form">
+                <div class="form-field">
+                    <label for="name" class="form-field__label">Name</label>
+                    <input type="text" id="name" placeholder="Harry Potter" class="form-field__input input--password">
+                </div>
+                <div class="form-field">
+                    <label for="email" class="form-field__label">Email adress</label>
+                    <input type="email" id="email" placeholder="myadress@example.com" class="form-field__input input--email">
+                </div>
+                <div class="form-field">
+                    <label for="new-password" class="form-field__label">Re-enter password</label>
+                    <input type="password" id="new-password" placeholder="*********" class="form-field__input input--password">
+                </div>
+                
+                <input type="submit" value="Create" class="button button--primary">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
