@@ -11,7 +11,7 @@ function Header () {
   const [toggle, setToggle] = useState(false);
 
   const handleToggle = () => {
-    setToggle(!toggle);
+    setToggle(prevToggle => !prevToggle);
   }
 
   return (
