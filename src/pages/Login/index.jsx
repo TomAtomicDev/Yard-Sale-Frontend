@@ -31,18 +31,18 @@ function Login (props) {
           <button
             onClick={handleSubmit}
             className="button button--primary">
-            Log in
+          Log in
           </button> 
 
           <a 
             href="/" 
             className="tinny-note tinny-note__link">
-            Forgot my password
+          Forgot my password
           </a>
         </form>
         <button 
           className="button button--secondary">         
-          Sign up
+        Sign up
         </button>
       </div>
     </div> 

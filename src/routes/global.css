@@ -102,6 +102,11 @@ a {
   
 }
 
+.arrow {
+	transform: rotate(180deg);
+	margin-right: 14px;
+}
+
 .logo {
 	width: 150px;
 	margin-bottom: 48px;

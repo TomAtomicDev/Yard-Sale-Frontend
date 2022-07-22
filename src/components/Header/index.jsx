@@ -1,14 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import './Header.scss';
 import {MenuMobile} from '@components/MenuMobile';
-
+import {AppContext} from '@context/AppContext';
+import {MyOrder} from '@containers/MyOrder';
 import iconMenu from '@icons/icon_menu.svg';
 import iconLogo from '@logos/logo_yard_sale.svg';
 import iconShoppingCart from '@icons/icon_shopping_cart.svg';
 
 function Header () {
+
+  const { state: {cart}} = useContext(AppContext);
   
   const [toggle, setToggle] = useState(false);
+  const [toggleOrders, setToggleOrders] = useState(false);
 
   const handleToggle = () => {
     setToggle(prevToggle => !prevToggle);
@@ -51,15 +55,18 @@ function Header () {
           <li className="nav-right__email" onClick={handleToggle}>
               myadress@example.com
             </li>
-          <li className="nav-right__shopping">
+          <li 
+            className="nav-right__shopping" 
+            onClick={()=>setToggleOrders(prevToggle => !prevToggle)}>
             
               <img className="nav-right__shopping-icon" src={iconShoppingCart} alt />
-              <div>2</div>
+              {cart.length >0 && <div>{cart.length}</div>}
             
           </li>
         </ul>
       </div>
       {toggle && <MenuMobile />}
+      {toggleOrders && <MyOrder />}
     </nav>
 
   );

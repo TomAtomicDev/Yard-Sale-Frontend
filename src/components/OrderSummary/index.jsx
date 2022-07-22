@@ -11,7 +11,7 @@ function OrderSummary (props) {
         <span className="order-summary__count">6 articles</span>
       </p>
       <p className="order-summary__totalmoney">$560.00</p>
-      <img src={iconArrow} alt="arrow" />                
+      {/* <img src={iconArrow} alt="arrow" />                 */}
     </div>
 
   );
