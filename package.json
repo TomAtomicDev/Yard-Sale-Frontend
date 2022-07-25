@@ -1,4 +1,5 @@
 {
+  "homepage": "https://tomatomicdev.github.io/Yard-Sale-Frontend/",
   "name": "yard-sale-frontend",
   "description": "This is a practice project about a web app called Yard Sale.",
   "version": "1.0.0",
@@ -41,6 +42,6 @@
   },
   "bugs": {
     "url": "https://github.com/TomAtomicDev/Yard-Sale-Frontend/issues"
-  },
-  "homepage": "https://github.com/TomAtomicDev/Yard-Sale-Frontend#readme"
+  }
+  
 }
