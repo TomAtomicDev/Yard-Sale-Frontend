@@ -1,9 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const MiniCssPlugin = require('mini-css-extract-plugin');
-
-
-
+const MiniCssPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
     entry: './src/index.js',
@@ -73,6 +70,10 @@ module.exports = {
         })
     ],
     devServer: {
+        static: {
+            directory: path.join(__dirname, 'public'),
+          },
+          compress: true,
         historyApiFallback: true,
     }
 }
