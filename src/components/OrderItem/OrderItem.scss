@@ -1,0 +1,22 @@
+.orderItem {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.orderItem__img {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  object-position: center;
+  object-fit: cover;
+}
+.orderItem__name {
+  color: var(--very-light-pink)
+}
+.orderItem__price {
+  color: var(--black);
+  font-size: var(--md);
+  font-weight: bold;
+}

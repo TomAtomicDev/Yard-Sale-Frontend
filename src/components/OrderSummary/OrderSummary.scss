@@ -1,0 +1,31 @@
+.order-summary {
+  display: grid;
+      grid-template-columns: auto 1fr;
+      gap:16px;
+      align-items: center;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  background-color: var(--text-input-field);
+  
+}
+.order-summary__info {
+  display: flex;
+      flex-direction: column;
+  text-align: center;
+}
+.order-summary__date {
+  
+  font-size: var(--md);
+  font-weight: bold;
+}
+.order-summary__count {
+  
+  font-size: var(--sm);
+  color: var(--very-light-pink);
+}
+.order-summary__totalmoney {
+  font-weight: bold;
+  text-align: end;
+
+}

@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Account</title>
+    <title>New password</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/logos/favicon_bota_fora.svg" type="img">
+    
     <style>
         :root {
             --white: #FFFFFF;
             --black: #000000;
             --dark: #232830;
             --very-light-pink: #C7C7C7;
-            --text-input-field: #F7F7F7;
+            --text-input-form-field: #F7F7F7;
             --hospital-green: #ACD9B2;
             --sm: 14px;
             --md: 16px;
@@ -30,14 +30,14 @@
             font-family: 'Quicksand', sans-serif;
             min-height: 400px;
         }
-        .login {
+        .CreateAccount {
             width: 100%;
             height: 100vh;
             
             display: grid;
             place-items: center;
         }
-        .form-container {
+        .CreateAccount-container {
             display: grid;
                 grid-template-rows: auto 1fr auto;
             width: 300px;
@@ -54,46 +54,35 @@
             margin-bottom: 12px;
             text-align: center;
         }
-        .title--myaccount {
+        .CreateAccount__title {
             text-align: start;
             padding: 12px;
         }
-        .subtitle {
-            color: var(--very-light-pink);
-            font-size: var(--md);
-            font-weight: 300;
-            margin: 0 auto 32px;
-            text-align: center;
-        }
+
         .form {
             display: flex;
                 flex-direction: column;
                 justify-content: center;
                 
         }
-        .field {
+        .form-field {
             display: flex;
                 flex-direction: column;
             width: 100%;
             padding: 12px;
         }
-        .field__label {
+        .form-field__label {
             font-size: var(--sm);
             font-weight: bold;
             margin-bottom: 4px;
         }
-        .field__input {
-            background-color: var(--text-input-field);
+        .form-field__input {
+            background-color: var(--text-input-form-field);
             border: none;
             border-radius: 8px;
             height: 30px;
             font-size: var(--md);
             padding: 6px;
-        }
-        .field__value {
-            color: var(--very-light-pink);
-            font-size: var(--md);
-            margin: 8px p 32px;
         }
         .button {
             width: 95%;
@@ -109,20 +98,14 @@
             color: var(--white);
             background-color: var(--hospital-green);
         }
-        .button--secondary {
-            border: 1px solid var(--hospital-green);
-            color: var(--hospital-green);
-            background-color: var(--white);
-        
-        }
         @media (max-width: 640px) {
-            .form-container {
+            .CreateAccount-container {
                 display: inline-block;
                 height: 100%;
                 min-height: 400px;
 
             }
-            .button--primary, .button--secondary {
+            .button--primary {
                 position: absolute;
                 width: 285px;
                 justify-self: center;
@@ -133,30 +116,27 @@
     </style>
 </head>
 <body>
-    <div class="login">
-        <div class="form-container">
+    <div class="CreateAccount"> 
+        <div class="CreateAccount-container">
             
             
-            <h1 class="title title--myaccount">My Account</h1>
-            <!-- <p class="subtitle">Enter a new password for your account</p> -->
+            <h1 class="title CreateAccount__title">Create a new Account</h1>
+            
             <form action="/" class="form">
-                <div class="field">
-                    <label for="name" class="field__label">Name</label>
-                    <!-- <input type="text" id="name" placeholder="Harry Potter" class="field__input input--password"> -->
-                    <p class="field__value">Harry Potter</p>
+                <div class="form-field">
+                    <label for="name" class="form-field__label">Name</label>
+                    <input type="text" id="name" placeholder="Harry Potter" class="form-field__input input--password">
                 </div>
-                <div class="field">
-                    <label for="email" class="field__label">Email adress</label>
-                    <!-- <input type="email" id="email" placeholder="myadress@example.com" class="field__input input--email"> -->
-                    <p class="field__value">dudethatsurvived2001@ministry.com</p>
+                <div class="form-field">
+                    <label for="email" class="form-field__label">Email adress</label>
+                    <input type="email" id="email" placeholder="myadress@example.com" class="form-field__input input--email">
                 </div>
-                <div class="field">
-                    <label for="new-password" class="field__label">Re-enter password</label>
-                    <!-- <input type="password" id="new-password" placeholder="*********" class="field__input input--password"> -->
-                    <p class="field__value">*********</p>
+                <div class="form-field">
+                    <label for="new-password" class="form-field__label">Re-enter password</label>
+                    <input type="password" id="new-password" placeholder="*********" class="form-field__input input--password">
                 </div>
                 
-                <input type="submit" value="Edit" class="button button--secondary">
+                <input type="submit" value="Create" class="button button--primary">
             </form>
         </div>
     </div>
